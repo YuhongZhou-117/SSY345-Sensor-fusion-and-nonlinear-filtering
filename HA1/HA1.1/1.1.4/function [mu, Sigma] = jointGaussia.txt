@@ -1,0 +1,34 @@
+function [mu, Sigma] = jointGaussian(mu_x, sigma2_x, sigma2_r)
+%jointGaussian calculates the joint Gaussian density as defined
+%in problem 1.3a. 
+%
+%Input
+%   MU_X        Expected value of x
+%   SIGMA2_X    Covariance of x
+%   SIGMA2_R    Covariance of the noise r
+%
+%Output
+%   MU          Mean of joint density 
+%   SIGMA       Covariance of joint density
+
+
+%Your code here
+    % Determine A and b, [x y]' = A [x r]' + b, y = x + r
+    A = [1,0;1,1];
+    b = [0;0];
+    
+    % Expected value of x, mu_r = 0
+    mu_y = mu_x + 0;
+    
+    % Mean of joint density
+    mu = [mu_x; mu_y];
+    
+    % Covariance of joint density
+    % Covariance of y
+    sigma_y = sigma2_x + sigma2_r
+    
+    % Covariance of joint density
+    Sigma = [sigma2_x, sigma2_x;
+             sigma2_x, sigma_y ];
+    
+end

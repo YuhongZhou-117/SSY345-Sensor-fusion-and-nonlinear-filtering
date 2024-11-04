@@ -1,0 +1,1 @@
+2) The covariance should be a 3x3 matrix and what you present is variance.

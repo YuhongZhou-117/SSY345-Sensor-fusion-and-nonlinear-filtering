@@ -1,0 +1,1 @@
+Nice work! Deducted 0.5 points due to: - problem 3: Would've liked that you relate your results to how we expect a Kalman filter to behave in general based on Q. In general, how should the Kalman filter behave if Q large vs Q small?

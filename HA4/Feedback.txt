@@ -1,0 +1,1 @@
+Well done! Deducted 3.5 points due to: - problem 3: In c), you're a bit vague and don't specify how you're going to implement the map information exactly. In d), you don't mention what Q is used and it's evident from e) that the map information is not implemented. Also, in e), the uninformative prior is implemented wrongly - see SD
